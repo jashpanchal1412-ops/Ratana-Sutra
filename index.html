@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratna Sutra — Handcrafted Crochet Collection</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-icon">🧶</span>
+                Ratna <span>Sutra</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Collection</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://wa.me/9313228041?text=Hi!%20I'd%20love%20to%20see%20your%20catalog%20🧶"
+                        target="_blank" class="nav-cta">
+                        <i class="fab fa-whatsapp"></i> Order Now
+                    </a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-left">
+            <div class="hero-eyebrow">Handcrafted with love</div>
+            <h1 class="hero-title">
+                Artisan Crochet<br>
+                <em>Collection</em>
+            </h1>
+            <p class="hero-body">
+                Each piece is thoughtfully handcrafted using premium yarns — from elegant handbags to delicate flowers,
+                whimsical keychains and beyond.
+            </p>
+            <div class="hero-actions">
+                <a href="#categories" class="btn-primary">
+                    Explore Collection
+                    <i class="fas fa-arrow-right" style="font-size:0.75rem"></i>
+                </a>
+                <a href="https://wa.me/9313228041?text=Hi!%20I%20want%20to%20see%20your%20catalog%20🧶" target="_blank"
+                    class="btn-secondary">
+                    <i class="fab fa-whatsapp" style="color:#25D366"></i>
+                    Request Catalog
+                </a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide active">
+                    <div class="slide-icon">👜</div>
+                    <div class="slide-label">Artisan Handbags</div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-icon">🌸</div>
+                    <div class="slide-label">Crotchet Flowers</div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-icon">🔑</div>
+                    <div class="slide-label">Charm Keychains</div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="slide-icon">🧸</div>
+                    <div class="slide-label"> Toys</div>
+                </div>
+            </div>
+            <div class="slide-dots" id="slideDots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div class="hero-decor">Ratna Sutra — est. 2025</div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-strip">
+        <div class="marquee-inner">
+            <span class="marquee-item">Handcrafted Crochet <span class="sep">✦</span></span>
+            <span class="marquee-item">Premium Yarns <span class="sep">✦</span></span>
+            <span class="marquee-item">Custom Orders Welcome <span class="sep">✦</span></span>
+            <span class="marquee-item">Worldwide Shipping <span class="sep">✦</span></span>
+            <span class="marquee-item">Bulk Discounts Available <span class="sep">✦</span></span>
+            <span class="marquee-item">Made to Order <span class="sep">✦</span></span>
+            <span class="marquee-item">Handcrafted Crochet <span class="sep">✦</span></span>
+            <span class="marquee-item">Premium Yarns <span class="sep">✦</span></span>
+            <span class="marquee-item">Custom Orders Welcome <span class="sep">✦</span></span>
+            <span class="marquee-item">Worldwide Shipping <span class="sep">✦</span></span>
+            <span class="marquee-item">Bulk Discounts Available <span class="sep">✦</span></span>
+            <span class="marquee-item">Made to Order <span class="sep">✦</span></span>
+        </div>
+    </div>
+
+    <!-- CATEGORIES / SHOP -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="section-eyebrow">Our Collection</div>
+                    <h2 class="section-title">Shop by <em>Category</em></h2>
+                </div>
+                <div class="category-tabs" role="tablist">
+                    <button class="category-tab active" data-category="all">All</button>
+                    <button class="category-tab" data-category="bags">Handbags</button>
+                    <button class="category-tab" data-category="flowers">Flowers</button>
+                    <button class="category-tab" data-category="keychains">Keychains</button>
+                    <button class="category-tab" data-category="more">More</button>
+                </div>
+            </div>
+
+            <!-- ALL -->
+            <div class="products-container active" id="all">
+                <div class="product-grid">
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/rose.jpg" alt="Elegant Hand Bag" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">
+                                Elegant Hand Bag
+                            </h3>
+                            <div class="product-bottom">
+
+                                <!-- Hardcoded Price -->
+                                <div class="price-wrap">
+                                    ₹ <span class="product-price">
+                                        299
+                                    </span>
+                                </div>
+
+                                <button class="order-btn" onclick="orderWhatsApp('Elegant Hand Bag', 299)">
+                                    <i class="fab fa-whatsapp"></i>Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/rose.jpg" alt="Rose Flower" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">
+                                Rose Flower
+                            </h3>
+                            <div class="product-bottom">
+
+                                <!-- Hardcoded Price -->
+                                <div class="price-wrap">
+                                    ₹ <span class="product-price">
+                                        299
+                                    </span>
+                                </div>
+
+                                <button class="order-btn" onclick="orderWhatsApp('Rose Flower', 299)">
+
+                                    <i class="fab fa-whatsapp"></i>
+                                    Order
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/rose.jpg" alt="Bear Keychain" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Bear Keychain</h3>
+                            <div class="product-bottom">
+                                <!-- Hardcoded Price -->
+                                <div class="price-wrap">
+                                    ₹ <span class="product-price">299</span>
+                                </div>
+                                <button class="order-btn" onclick="orderWhatsApp('Bear Keychain', 299)">
+                                    <i class="fab fa-whatsapp"></i>Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/rose.jpg" alt="Teddy Bear" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Teddy Bear</h3>
+                            <div class="product-bottom">
+                                <!-- Hardcoded Price -->
+                                <div class="price-wrap">
+                                    ₹ <span class="product-price">299</span>
+                                </div>
+                                <button class="order-btn" onclick="orderWhatsApp('Teddy Bear', 299)">
+                                    <i class="fab fa-whatsapp"></i>Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/rose.jpg" alt="Teddy Bear" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Tote Bag</h3>
+                            <div class="product-bottom">
+                                <!-- Hardcoded Price -->
+                                <div class="price-wrap">
+                                    ₹ <span class="product-price">299</span>
+                                </div>
+                                <button class="order-btn" onclick="orderWhatsApp('Tote Bag', 299)">
+                                    <i class="fab fa-whatsapp"></i>Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/rose.jpg" alt="Rose Flower" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Rose Flower</h3>
+                            <div class="product-bottom">
+
+                                <!-- Hardcoded Price -->
+                                <div class="price-wrap">
+                                    ₹ <span class="product-price">299</span>
+                                </div>
+
+                                <button class="order-btn" onclick="orderWhatsApp('Rose Flower', 299)">
+                                    <i class="fab fa-whatsapp"></i>Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- BAGS -->
+            <div class="products-container" id="bags">
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img">👜</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Elegant Hand Bag</h3>
+                            <div class="product-bottom">
+                                <div class="price-wrap">₹&nbsp;<input type="number" class="price-input" value="25">
+                                </div>
+                                <a href="https://wa.me/9313228041?text=I'd+like+to+order+the+Elegant+Hand+Bag"
+                                    target="_blank" class="order-btn"><i class="fab fa-whatsapp"></i> Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">🎒</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Tote Bag</h3>
+                            <div class="product-bottom">
+                                <div class="price-wrap">₹&nbsp;<input type="number" class="price-input" value="30">
+                                </div>
+                                <a href="https://wa.me/9313228041?text=I'd+like+to+order+the+Tote+Bag" target="_blank"
+                                    class="order-btn"><i class="fab fa-whatsapp"></i> Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">👜</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Clutch Bag</h3>
+                            <div class="product-bottom">
+                                <div class="price-wrap">₹&nbsp;<input type="number" class="price-input" value="20">
+                                </div>
+                                <a href="https://wa.me/9313228041?text=I'd+like+to+order+the+Clutch+Bag" target="_blank"
+                                    class="order-btn"><i class="fab fa-whatsapp"></i> Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FLOWERS -->
+            <div class="products-container" id="flowers">
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img">💐</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Rose Flower</h3>
+                            <div class="product-bottom">
+                                <div class="price-wrap">₹&nbsp;<input type="number" class="price-input" value="8"></div>
+                                <a href="https://wa.me/9313228041?text=I'd+like+to+order+Rose+Flower" target="_blank"
+                                    class="order-btn"><i class="fab fa-whatsapp"></i> Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="images/rose.jpg" alt="Rose Flower" class="product-image">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Rose Flower</h3>
+
+                            <div class="product-bottom">
+                                <!-- Hardcoded Price -->
+                                <div class="price-wrap">
+                                    ₹ <span class="product-price">299</span>
+                                </div>
+
+                                <!-- WhatsApp Order -->
+                                <a href="https://wa.me/9313228041?text=I'd+like+to+order+Rose+Flower+₹299"
+                                    target="_blank" class="order-btn">
+                                    <i class="fab fa-whatsapp"></i>
+                                    Order
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">🌸</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Cherry Blossom</h3>
+                            <div class="product-bottom">
+                                <div class="price-wrap">₹&nbsp;<input type="number" class="price-input" value="12">
+                                </div>
+                                <a href="https://wa.me/9313228041?text=I'd+like+to+order+Cherry+Blossom" target="_blank"
+                                    class="order-btn"><i class="fab fa-whatsapp"></i> Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KEYCHAINS -->
+            <div class="products-container" id="keychains">
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img">🔑</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Bear Keychain</h3>
+                            <div class="product-bottom">
+                                <div class="price-wrap">₹&nbsp;<input type="number" class="price-input" value="5"></div>
+                                <a href="https://wa.me/9313228041?text=I'd+like+to+order+Bear+Keychain" target="_blank"
+                                    class="order-btn"><i class="fab fa-whatsapp"></i> Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">🐱</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Cat Keychain</h3>
+                            <div class="product-bottom">
+                                <div class="price-wrap">₹&nbsp;<input type="number" class="price-input" value="6"></div>
+                                <a href="https://wa.me/9313228041?text=I'd+like+to+order+Cat+Keychain" target="_blank"
+                                    class="order-btn"><i class="fab fa-whatsapp"></i> Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">🦄</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Unicorn Keychain</h3>
+                            <div class="product-bottom">
+                                <div class="price-wrap">₹&nbsp;<input type="number" class="price-input" value="7"></div>
+                                <a href="https://wa.me/9313228041?text=I'd+like+to+order+Unicorn+Keychain"
+                                    target="_blank" class="order-btn"><i class="fab fa-whatsapp"></i> Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MORE -->
+            <div class="products-container" id="more">
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-img">🧸</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Teddy Bear</h3>
+                            <div class="product-bottom">
+                                <div class="price-wrap">₹&nbsp;<input type="number" class="price-input" value="15">
+                                </div>
+                                <a href="https://wa.me/9313228041?text=I'd+like+to+order+Teddy+Bear" target="_blank"
+                                    class="order-btn"><i class="fab fa-whatsapp"></i> Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">🐰</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Bunny</h3>
+                            <div class="product-bottom">
+                                <div class="price-wrap">₹&nbsp;<input type="number" class="price-input" value="12">
+                                </div>
+                                <a href="https://wa.me/9313228041?text=I'd+like+to+order+Bunny" target="_blank"
+                                    class="order-btn"><i class="fab fa-whatsapp"></i> Order</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">🦋</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Butterfly</h3>
+                            <div class="product-bottom">
+                                <div class="price-wrap">₹&nbsp;<input type="number" class="price-input" value="9"></div>
+                                <a href="https://wa.me/9313228041?text=I'd+like+to+order+Butterfly" target="_blank"
+                                    class="order-btn"><i class="fab fa-whatsapp"></i> Order</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER / ABOUT -->
+    <section class="banner">
+        <div class="banner-inner">
+            <div class="banner-content">
+                <div class="section-eyebrow">Why Choose Us</div>
+                <h2 class="banner-title">Every Stitch Tells a Story</h2>
+                <p class="banner-body">
+                    Ratna Sutra is a boutique crochet studio creating handcrafted pieces that blend traditional
+                    craftsmanship with modern design. Each item is made to order with love, precision, and the finest
+                    yarns.
+                </p>
+                <a href="https://wa.me/9313228041?text=Hi!%20I'd%20like%20to%20know%20more%20about%20custom%20orders"
+                    target="_blank" class="btn-primary">
+                    <i class="fab fa-whatsapp"></i> Request Custom Order
+                </a>
+            </div>
+            <div>
+                <div class="banner-stats">
+                    <!-- <div>
+                        <span class="stat-num">500+</span>
+                        <span class="stat-label">Orders Completed</span>
+                    </div> -->
+                    <div>
+                        <span class="stat-num">50+</span>
+                        <span class="stat-label">Unique Designs</span>
+                    </div>
+                    <div>
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">Handcrafted</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-eyebrow">Transparent Pricing</div>
+            <h2 class="section-title">Flexible & Fair</h2>
+            <p class="pricing-body">Custom orders, bulk purchases, and wholesale pricing available on request.</p>
+
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-card-icon">🎁</div>
+                    <div class="pricing-card-title">Custom Orders</div>
+                    <p class="pricing-card-desc">Have a specific design in mind? We create specific pieces tailored to
+                        your vision and colour preferences.</p>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-icon">📦</div>
+                    <div class="pricing-card-title">Bulk Discounts</div>
+                    <p class="pricing-card-desc">Planning a gifting project or event? Ask about our wholesale rates for
+                        orders of 10 pieces or more.</p>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-icon">🚚</div>
+                    <div class="pricing-card-title">Shipping Details</div>
+                    <p class="pricing-card-desc">We ship to most Indian States. Domestic delivery within 3–5 days.
+                        State orders within 10–15 days.</p>
+                </div>
+            </div>
+
+            <a href="https://wa.me/9313228041?text=Hello!%20Please%20send%20full%20catalog%20with%20prices!%20🧶"
+                target="_blank" class="btn-light">
+                <i class="fab fa-whatsapp"></i>Conatct Us On Whatsapp
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="#" class="logo">🧶 Ratna <span>Sutra</span></a>
+                <p class="footer-tagline">Handcrafted crochet pieces made with premium yarn and a whole lot of love.
+                    Each piece is unique, made to order, and shipped worldwide.</p>
+                <div class="social-links">
+                    <a href="https://wa.me/9313228041" target="_blank" class="social-link"><i
+                            class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Collection</h4>
+                <ul class="footer-links">
+                    <li><a href="#categories">Handbags</a></li>
+                    <li><a href="#categories">Flowers</a></li>
+                    <li><a href="#categories">Keychains</a></li>
+                    <li><a href="#categories">Amigurumi</a></li>
+                    <li><a href="#categories">Custom Orders</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul class="footer-links">
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="https://wa.me/9313228041" target="_blank">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-tagline">© <span id="year"></span> Ratna Sutra. All rights reserved.</span>
+            <span class="footer-tagline">Made with ❤️ &amp; fine yarn</span>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/9313228041?text=Hi!%20I%20love%20your%20crochet%20collection!%20Can%20you%20send%20catalog?%20🧶"
+        target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Image Modal -->
+
+    <div id="imageModal" class="image-modal">
+
+        <span class="close-modal">&times;</span>
+
+        <img id="modalImage">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
